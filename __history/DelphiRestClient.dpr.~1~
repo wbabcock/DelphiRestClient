@@ -1,0 +1,14 @@
+program DelphiRestClient;
+
+uses
+  Vcl.Forms,
+  fmrMain_u in 'fmrMain_u.pas' {frmMain};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmMain, frmMain);
+  Application.Run;
+end.

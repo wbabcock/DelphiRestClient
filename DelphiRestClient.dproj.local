@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/02/19 08:20:01.000.518,=C:\Users\wbabc\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/22 09:54:26.256,=C:\Users\wbabc\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/22 10:01:25.093,C:\Users\wbabc\Repositories\DelphiRestClient\fmrMain_u.pas=C:\Users\wbabc\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/22 10:01:25.093,C:\Users\wbabc\Repositories\DelphiRestClient\fmrMain_u.dfm=C:\Users\wbabc\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/02/22 10:01:39.424,C:\Users\wbabc\Repositories\DelphiRestClient\DelphiRestClient.dproj=C:\Users\wbabc\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2021/02/22 10:01:56.741,=C:\Users\wbabc\Repositories\DelphiRestClient\Unit1.pas</Transaction>
+    <Transaction>2021/02/22 10:02:35.692,C:\Users\wbabc\Repositories\DelphiRestClient\Data Modules\dmREST_u.pas=C:\Users\wbabc\Repositories\DelphiRestClient\Unit1.pas</Transaction>
+    <Transaction>2021/02/22 10:02:35.692,C:\Users\wbabc\Repositories\DelphiRestClient\Data Modules\dmREST_u.dfm=C:\Users\wbabc\Repositories\DelphiRestClient\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

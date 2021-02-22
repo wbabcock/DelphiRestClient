@@ -1,0 +1,22 @@
+object dmREST: TdmREST
+  OldCreateOrder = False
+  Height = 387
+  Width = 618
+  object rstClient: TRESTClient
+    Params = <>
+    Left = 32
+    Top = 16
+  end
+  object rstRequest: TRESTRequest
+    Client = rstClient
+    Params = <>
+    Response = rstResponse
+    SynchronizedEvents = False
+    Left = 32
+    Top = 72
+  end
+  object rstResponse: TRESTResponse
+    Left = 32
+    Top = 128
+  end
+end

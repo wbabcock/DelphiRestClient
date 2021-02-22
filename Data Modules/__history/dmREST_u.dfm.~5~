@@ -1,0 +1,46 @@
+object dmREST: TdmREST
+  OldCreateOrder = False
+  Height = 387
+  Width = 618
+  object rstClient: TRESTClient
+    Params = <>
+    Left = 32
+    Top = 16
+  end
+  object rstRequest: TRESTRequest
+    Client = rstClient
+    Params = <>
+    Resource = 'https://jsonplaceholder.typicode.com/posts/1'
+    Response = rstResponse
+    SynchronizedEvents = False
+    Left = 32
+    Top = 72
+  end
+  object rstResponse: TRESTResponse
+    Left = 32
+    Top = 128
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 232
+    Top = 80
+  end
+  object AdapterBindSource1: TAdapterBindSource
+    AutoActivate = True
+    ScopeMappings = <>
+    Left = 232
+    Top = 24
+  end
+  object FDTable: TFDTable
+    Left = 88
+    Top = 216
+  end
+  object rstResponseDataSetAdapter: TRESTResponseDataSetAdapter
+    Dataset = FDTable
+    FieldDefs = <>
+    Response = rstResponse
+    Left = 96
+    Top = 144
+  end
+end

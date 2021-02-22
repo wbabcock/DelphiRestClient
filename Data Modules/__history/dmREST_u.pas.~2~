@@ -1,0 +1,29 @@
+unit dmREST_u;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, REST.Types, REST.Client,
+  Data.Bind.Components, Data.Bind.ObjectScope;
+
+type
+  TdmREST = class(TDataModule)
+    rstClient: TRESTClient;
+    rstRequest: TRESTRequest;
+    rstResponse: TRESTResponse;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  dmREST: TdmREST;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.
