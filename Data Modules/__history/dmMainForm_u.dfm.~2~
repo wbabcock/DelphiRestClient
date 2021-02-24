@@ -1,0 +1,5 @@
+object dmMainForm: TdmMainForm
+  OldCreateOrder = False
+  Height = 232
+  Width = 378
+end

@@ -1,0 +1,173 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'REST Client'
+  ClientHeight = 699
+  ClientWidth = 1156
+  Position = Default
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object pnlHistory: TPanel
+    Align = Left
+    Position.Y = 57.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 642.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object tabControlHistory: TTabControl
+      Align = Client
+      Size.Width = 249.000000000000000000
+      Size.Height = 642.000000000000000000
+      Size.PlatformDefault = False
+      TabIndex = 0
+      TabOrder = 0
+      TabPosition = PlatformDefault
+      Sizes = (
+        249s
+        616s
+        249s
+        616s)
+      object tabHistory: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 58.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'History'
+        ExplicitSize.cx = 58.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        object Button1: TButton
+          Align = Bottom
+          Position.Y = 582.000000000000000000
+          Size.Width = 249.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Clear History'
+        end
+      end
+      object tabCollections: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 78.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Collections'
+        ExplicitSize.cx = 78.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+      end
+    end
+  end
+  object pnlMain: TPanel
+    Align = Client
+    Size.Width = 899.000000000000000000
+    Size.Height = 642.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object tabControl: TTabControl
+      Align = Client
+      Size.Width = 899.000000000000000000
+      Size.Height = 642.000000000000000000
+      Size.PlatformDefault = False
+      TabIndex = 0
+      TabOrder = 0
+      TabPosition = PlatformDefault
+      Sizes = (
+        899s
+        616s)
+      object tab1: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 109.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Untitled Request'
+        ExplicitSize.cx = 109.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inline fraRequest1: TfraRequest
+          Align = Client
+          Size.Width = 899.000000000000000000
+          Size.Height = 616.000000000000000000
+          Size.PlatformDefault = False
+          inherited pnlRequest: TPanel
+            Size.Width = 899.000000000000000000
+            inherited Label1: TLabel
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+          end
+          inherited pnlResponse: TPanel
+            Size.Width = 899.000000000000000000
+            Size.Height = 343.000000000000000000
+            inherited Label2: TLabel
+              Padding.Left = 100.000000000000000000
+              Size.Width = 889.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+            inherited mmoReposnse: TMemo
+              ReadOnly = True
+              Margins.Top = 10.000000000000000000
+              Size.Width = 879.000000000000000000
+              Size.Height = 290.000000000000000000
+              TabOrder = 2
+              Viewport.Width = 879.000000000000000000
+              Viewport.Height = 290.000000000000000000
+            end
+          end
+          inherited Splitter2: TSplitter
+            Size.Width = 899.000000000000000000
+          end
+        end
+      end
+    end
+  end
+  object MenuBar1: TMenuBar
+    Images = dmMainForm.imageList
+    Size.Width = 1156.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object mnuFile: TMenuItem
+      Text = '&File'
+      object mnuFileExit: TMenuItem
+        Action = dmMainForm.FileExit
+        Enabled = True
+        Locked = True
+        StyleLookup = 'menuitemstyle'
+        Text = 'Quit'
+        ImageIndex = 43
+      end
+    end
+  end
+  object toolBar: TToolBar
+    Position.Y = 24.000000000000000000
+    Size.Width = 1156.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+  end
+  object Splitter1: TSplitter
+    Align = Left
+    Cursor = crHSplit
+    MinSize = 20.000000000000000000
+    Position.X = 249.000000000000000000
+    Position.Y = 57.000000000000000000
+    Size.Width = 8.000000000000000000
+    Size.Height = 642.000000000000000000
+    Size.PlatformDefault = False
+  end
+end

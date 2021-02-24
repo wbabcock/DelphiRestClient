@@ -1,0 +1,26 @@
+object dmMainForm: TdmMainForm
+  OldCreateOrder = False
+  Height = 232
+  Width = 378
+  object mainMenu: TMainMenu
+    Left = 26
+    Top = 16
+  end
+  object actionList: TActionList
+    Images = imageList
+    Left = 328
+    Top = 16
+    object FileExit: TFileExit
+      Category = 'File'
+      Hint = 'Quit|Quits the application'
+      ImageIndex = 43
+      ImageIndex = 43
+    end
+  end
+  object imageList: TImageList
+    Source = <>
+    Destination = <>
+    Left = 328
+    Top = 80
+  end
+end

@@ -23,8 +23,6 @@ type
     tabCollections: TTabItem;
     Splitter1: TSplitter;
     fraRequest1: TfraRequest;
-    Button1: TButton;
-    procedure fraRequest1btnSendClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -37,11 +35,5 @@ var
 implementation
 
 {$R *.fmx}
-
-procedure TfrmMain.fraRequest1btnSendClick(Sender: TObject);
-begin
-  fraRequest1.btnSendClick(Sender);
-
-end;
 
 end.

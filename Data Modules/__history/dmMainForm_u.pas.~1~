@@ -1,4 +1,4 @@
-unit dmREST_u;
+unit dmMainForm_u;
 
 interface
 
@@ -6,7 +6,7 @@ uses
   System.SysUtils, System.Classes;
 
 type
-  TdmREST = class(TDataModule)
+  TdmMainForm = class(TDataModule)
   private
     { Private declarations }
   public
@@ -14,7 +14,7 @@ type
   end;
 
 var
-  dmREST: TdmREST;
+  dmMainForm: TdmMainForm;
 
 implementation
 

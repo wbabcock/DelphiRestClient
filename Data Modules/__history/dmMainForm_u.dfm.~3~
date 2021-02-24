@@ -1,0 +1,19 @@
+object dmMainForm: TdmMainForm
+  OldCreateOrder = False
+  Height = 232
+  Width = 378
+  object mainMenu: TMainMenu
+    Left = 26
+    Top = 16
+  end
+  object actionList: TActionList
+    Left = 104
+    Top = 64
+  end
+  object imageList: TImageList
+    Source = <>
+    Destination = <>
+    Left = 120
+    Top = 152
+  end
+end

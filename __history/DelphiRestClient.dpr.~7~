@@ -4,8 +4,7 @@ uses
   System.StartUpCopy,
   FMX.Forms,
   fmrMain_u in 'fmrMain_u.pas' {frmMain},
-  dmMainForm_u in 'Data Modules\dmMainForm_u.pas' {dmMainForm: TDataModule},
-  fraRequest_u in 'fraRequest_u.pas' {fraRequest: TFrame};
+  dmREST_u in 'Data Modules\dmREST_u.pas' {dmREST: TDataModule};
 
 {$R *.res}
 
@@ -13,6 +12,6 @@ begin
   ReportMemoryLeaksOnShutdown := True;
   Application.Initialize;
   Application.CreateForm(TfrmMain, frmMain);
-  Application.CreateForm(TdmMainForm, dmMainForm);
+  Application.CreateForm(TdmREST, dmREST);
   Application.Run;
 end.

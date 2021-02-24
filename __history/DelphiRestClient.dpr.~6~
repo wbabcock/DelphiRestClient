@@ -1,0 +1,15 @@
+program DelphiRestClient;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  fmrMain_u in 'fmrMain_u.pas' {Form1};
+
+{$R *.res}
+
+begin
+  ReportMemoryLeaksOnShutdown := True;
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

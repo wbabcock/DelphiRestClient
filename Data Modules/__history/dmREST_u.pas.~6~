@@ -6,7 +6,7 @@ uses
   System.SysUtils, System.Classes;
 
 type
-  TdmREST = class(TDataModule)
+  TdmRest = class(TDataModule)
   private
     { Private declarations }
   public
@@ -14,7 +14,7 @@ type
   end;
 
 var
-  dmREST: TdmREST;
+  dmRest: TdmRest;
 
 implementation
 
