@@ -1,0 +1,255 @@
+object fraRequest: TfraRequest
+  Size.Width = 899.000000000000000000
+  Size.Height = 615.000000000000000000
+  Size.PlatformDefault = False
+  OnPaint = FramePaint
+  OnResize = FrameResize
+  object pnlRequest: TPanel
+    Align = Top
+    Size.Width = 899.000000000000000000
+    Size.Height = 265.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Label1: TLabel
+      StyledSettings = [Family]
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = xFF2144A1
+      Text = 'Request'
+      TabOrder = 0
+    end
+    object cboMethod: TComboBox
+      Items.Strings = (
+        'POST'
+        'PUT'
+        'GET'
+        'DELETE')
+      ItemIndex = 2
+      Position.X = 8.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+    object edtURL: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Anchors = [akLeft, akTop, akRight]
+      TabOrder = 2
+      Position.X = 96.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 728.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object btnSend: TButton
+      Anchors = [akTop, akRight]
+      Position.X = 833.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 55.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Send'
+      OnClick = btnSendClick
+    end
+    object TabControl1: TTabControl
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      Position.Y = 80.000000000000000000
+      Size.Width = 899.000000000000000000
+      Size.Height = 185.000000000000000000
+      Size.PlatformDefault = False
+      TabIndex = 1
+      TabOrder = 4
+      TabPosition = PlatformDefault
+      Sizes = (
+        899s
+        159s
+        899s
+        159s
+        899s
+        159s)
+      object TabItem1: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 92.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Authorization'
+      end
+      object TabItem2: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 59.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Header'
+      end
+      object TabItem3: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 47.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Body'
+        object grdBody: TStringGrid
+          Align = Client
+          CanFocus = True
+          ClipChildren = True
+          Size.Width = 899.000000000000000000
+          Size.Height = 119.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          RowCount = 1
+          Viewport.Width = 899.000000000000000000
+          Viewport.Height = 119.000000000000000000
+          object colBodyName: TStringColumn
+            Header = 'Name'
+          end
+          object colBodyValue: TStringColumn
+            Header = 'Value'
+          end
+        end
+        object ToolBar1: TToolBar
+          Size.Width = 899.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object btnBodyAddRow: TButton
+            Align = Left
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 36.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'addtoolbutton'
+            TabOrder = 0
+            Text = 'btnBodyAddRow'
+            OnClick = btnBodyAddRowClick
+          end
+        end
+      end
+    end
+  end
+  object pnlResponse: TPanel
+    Align = Client
+    Size.Width = 899.000000000000000000
+    Size.Height = 342.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object mmoReposnse: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Align = Client
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 879.000000000000000000
+      Size.Height = 291.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Viewport.Width = 879.000000000000000000
+      Viewport.Height = 291.000000000000000000
+    end
+    object Panel1: TPanel
+      Align = Top
+      Size.Width = 899.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Label2: TLabel
+        Align = Left
+        StyledSettings = [Family]
+        Margins.Left = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Size.Width = 87.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF2144A1
+        Text = 'Response'
+        TabOrder = 0
+      end
+      object lblStatus: TLabel
+        Align = Right
+        StyledSettings = [Family, FontColor]
+        Margins.Left = 15.000000000000000000
+        Margins.Right = 15.000000000000000000
+        Position.X = 634.000000000000000000
+        Size.Width = 250.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Trailing
+        TabOrder = 1
+      end
+    end
+  end
+  object Splitter2: TSplitter
+    Align = Top
+    Cursor = crVSplit
+    MinSize = 20.000000000000000000
+    Position.Y = 265.000000000000000000
+    Size.Width = 899.000000000000000000
+    Size.Height = 8.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Request: TRESTRequest
+    Client = Client
+    Params = <>
+    Response = Response
+    SynchronizedEvents = False
+    Left = 34
+    Top = 129
+  end
+  object Client: TRESTClient
+    Params = <>
+    Left = 34
+    Top = 73
+  end
+  object Response: TRESTResponse
+    Left = 114
+    Top = 73
+  end
+  object RepsonseDataSetAdapter: TRESTResponseDataSetAdapter
+    FieldDefs = <>
+    Left = 226
+    Top = 73
+  end
+  object BindingsList: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 852
+    Top = 85
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = Response
+      FieldName = 'Content'
+      Control = mmoReposnse
+      Track = False
+    end
+  end
+end

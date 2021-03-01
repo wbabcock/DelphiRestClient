@@ -1,0 +1,232 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'REST Client'
+  ClientHeight = 699
+  ClientWidth = 1156
+  Position = Default
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object pnlHistory: TPanel
+    Align = Left
+    Position.Y = 48.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 651.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object tabControlHistory: TTabControl
+      Align = Client
+      Size.Width = 249.000000000000000000
+      Size.Height = 651.000000000000000000
+      Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
+      TabIndex = 0
+      TabOrder = 0
+      TabPosition = PlatformDefault
+      Sizes = (
+        249s
+        602s
+        249s
+        602s)
+      object tabHistory: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 123.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'History'
+        ExplicitSize.cx = 58.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        object Button1: TButton
+          Align = Bottom
+          Position.Y = 568.000000000000000000
+          Size.Width = 249.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Clear History'
+        end
+      end
+      object tabCollections: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 124.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Collections'
+        ExplicitSize.cx = 78.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+      end
+    end
+  end
+  object pnlMain: TPanel
+    Align = Client
+    Size.Width = 899.000000000000000000
+    Size.Height = 651.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object tabControl: TTabControl
+      Align = Client
+      Size.Width = 899.000000000000000000
+      Size.Height = 651.000000000000000000
+      Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
+      TabIndex = 0
+      TabOrder = 0
+      TabPosition = PlatformDefault
+      Sizes = (
+        899s
+        602s)
+      object tab1: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 897.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Untitled Request'
+        ExplicitSize.cx = 109.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inline fraRequest1: TfraRequest
+          Align = Client
+          Size.Width = 899.000000000000000000
+          Size.Height = 602.000000000000000000
+          Size.PlatformDefault = False
+          inherited pnlRequest: TPanel
+            inherited Label1: TLabel
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+            inherited cboMethod: TComboBox
+              Size.Height = 32.000000000000000000
+            end
+            inherited edtURL: TEdit
+              Size.Height = 32.000000000000000000
+            end
+            inherited btnSend: TButton
+              OnClick = fraRequest1btnSendClick
+            end
+            inherited TabControl1: TTabControl
+              TabHeight = 49.000000000000000000
+              TabIndex = 2
+              Sizes = (
+                899s
+                136s
+                899s
+                136s
+                899s
+                136s
+                899s
+                136s)
+              inherited tabParams: TTabItem
+                Size.Width = 224.000000000000000000
+                Size.Height = 49.000000000000000000
+                ExplicitSize.cx = 69.000000000000000000
+                ExplicitSize.cy = 26.000000000000000000
+              end
+              inherited tabAuthorization: TTabItem
+                Size.Width = 224.000000000000000000
+                Size.Height = 49.000000000000000000
+                ExplicitSize.cx = 69.000000000000000000
+                ExplicitSize.cy = 26.000000000000000000
+              end
+              inherited tabHeaders: TTabItem
+                IsSelected = True
+                Size.Width = 224.000000000000000000
+                Size.Height = 49.000000000000000000
+                ExplicitSize.cx = 69.000000000000000000
+                ExplicitSize.cy = 26.000000000000000000
+              end
+              inherited tabBody: TTabItem
+                IsSelected = False
+                Size.Width = 225.000000000000000000
+                Size.Height = 49.000000000000000000
+                ExplicitSize.cx = 69.000000000000000000
+                ExplicitSize.cy = 26.000000000000000000
+                inherited grdBody: TStringGrid
+                  Size.Height = 88.000000000000000000
+                  Viewport.Width = 899.000000000000000000
+                  Viewport.Height = 88.000000000000000000
+                end
+                inherited ToolBar1: TToolBar
+                  Size.Height = 48.000000000000000000
+                  inherited btnBodyAddRow: TButton
+                    Size.Width = 48.000000000000000000
+                    Size.Height = 38.000000000000000000
+                    TabOrder = 1
+                  end
+                end
+              end
+            end
+          end
+          inherited pnlResponse: TPanel
+            Size.Height = 329.000000000000000000
+            inherited mmoReposnse: TMemo
+              ReadOnly = True
+              Margins.Top = 10.000000000000000000
+              Size.Height = 268.000000000000000000
+              TabOrder = 1
+              Viewport.Width = 875.000000000000000000
+              Viewport.Height = 264.000000000000000000
+            end
+            inherited Panel1: TPanel
+              TabOrder = 0
+              inherited Label2: TLabel
+                Padding.Left = 100.000000000000000000
+                Size.Width = 889.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+              inherited lblStatus: TLabel
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  object toolBar: TToolBar
+    Size.Width = 1156.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object btnNewTab: TButton
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'addtoolbutton'
+      TabOrder = 0
+      Text = 'New Tab'
+      ParentShowHint = False
+      ShowHint = False
+      OnClick = btnNewTabClick
+    end
+  end
+  object Splitter1: TSplitter
+    Align = Left
+    Cursor = crHSplit
+    MinSize = 20.000000000000000000
+    Position.X = 249.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 8.000000000000000000
+    Size.Height = 651.000000000000000000
+    Size.PlatformDefault = False
+  end
+end

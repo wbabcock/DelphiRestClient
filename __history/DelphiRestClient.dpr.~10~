@@ -3,9 +3,9 @@ program DelphiRestClient;
 uses
   System.StartUpCopy,
   FMX.Forms,
-  Main in 'Main.pas' {frmMain},
+  fmrMain_u in 'fmrMain_u.pas' {frmMain},
   dmMainForm_u in 'Data Modules\dmMainForm_u.pas' {dmMainForm: TDataModule},
-  RequestFrame in 'RequestFrame.pas' {fraRequest: TFrame};
+  fraRequest_u in 'fraRequest_u.pas' {fraRequest: TFrame};
 
 {$R *.res}
 

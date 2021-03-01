@@ -1,0 +1,90 @@
+inherited frmMain_Windows: TfrmMain_Windows
+  DesignerMasterStyle = 0
+  inherited pnlHistory: TPanel
+    inherited tabControlHistory: TTabControl
+      Sizes = (
+        249s
+        602s
+        249s
+        602s)
+      inherited tabHistory: TTabItem
+        Size.Width = 58.000000000000000000
+        ExplicitSize.cx = 58.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+      end
+      inherited tabCollections: TTabItem
+        Size.Width = 78.000000000000000000
+        ExplicitSize.cx = 78.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+      end
+    end
+  end
+  inherited pnlMain: TPanel
+    inherited tabControl: TTabControl
+      Sizes = (
+        899s
+        602s)
+      inherited Z: TTabItem
+        Size.Width = 109.000000000000000000
+        ExplicitSize.cx = 109.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inherited fraRequest1: TfraRequest
+          inherited pnlRequest: TPanel
+            inherited Label1: TLabel
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+            inherited TabControl1: TTabControl
+              Sizes = (
+                899s
+                136s
+                899s
+                136s
+                899s
+                136s
+                899s
+                136s)
+              inherited tabParams: TTabItem
+                Size.Width = 59.000000000000000000
+                ExplicitSize.cx = 69.000000000000000000
+                ExplicitSize.cy = 26.000000000000000000
+              end
+              inherited tabAuthorization: TTabItem
+                Size.Width = 92.000000000000000000
+                ExplicitSize.cx = 69.000000000000000000
+                ExplicitSize.cy = 26.000000000000000000
+              end
+              inherited tabHeaders: TTabItem
+                Size.Width = 64.000000000000000000
+                ExplicitSize.cx = 69.000000000000000000
+                ExplicitSize.cy = 26.000000000000000000
+              end
+              inherited tabBody: TTabItem
+                Size.Width = 47.000000000000000000
+                ExplicitSize.cx = 69.000000000000000000
+                ExplicitSize.cy = 26.000000000000000000
+                inherited grdBody: TStringGrid
+                  Viewport.Width = 899.000000000000000000
+                  Viewport.Height = 88.000000000000000000
+                end
+              end
+            end
+          end
+          inherited pnlResponse: TPanel
+            inherited mmoReposnse: TMemo
+              Viewport.Width = 879.000000000000000000
+              Viewport.Height = 268.000000000000000000
+            end
+            inherited Panel1: TPanel
+              inherited Label2: TLabel
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+              inherited lblStatus: TLabel
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+end

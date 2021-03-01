@@ -1,0 +1,130 @@
+inherited frmMain_Windows: TfrmMain_Windows
+  ClientHeight = 480
+  ClientWidth = 640
+  DesignerMasterStyle = 0
+  inherited pnlHistory: TPanel
+    Size.Height = 432.000000000000000000
+    inherited tabControlHistory: TTabControl
+      Size.Height = 432.000000000000000000
+      Sizes = (
+        249s
+        383s
+        249s
+        383s)
+      inherited tabHistory: TTabItem
+        Size.Width = 58.000000000000000000
+        ExplicitSize.cx = 58.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inherited Button1: TButton
+          Position.Y = 349.000000000000000000
+        end
+      end
+      inherited tabCollections: TTabItem
+        Size.Width = 78.000000000000000000
+        ExplicitSize.cx = 78.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+      end
+    end
+  end
+  inherited pnlMain: TPanel
+    Size.Width = 383.000000000000000000
+    Size.Height = 432.000000000000000000
+    inherited tabControl: TTabControl
+      Size.Width = 383.000000000000000000
+      Size.Height = 432.000000000000000000
+      Sizes = (
+        383s
+        383s)
+      inherited Z: TTabItem
+        Size.Width = 109.000000000000000000
+        ExplicitSize.cx = 897.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited fraRequest1: TfraRequest
+          Size.Width = 383.000000000000000000
+          Size.Height = 383.000000000000000000
+          inherited pnlRequest: TPanel
+            Size.Width = 383.000000000000000000
+            inherited Label1: TLabel
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+            inherited edtURL: TEdit
+              Size.Width = 212.000000000000000000
+            end
+            inherited btnSend: TButton
+              Position.X = 317.000000000000000000
+            end
+            inherited TabControl1: TTabControl
+              Size.Width = 383.000000000000000000
+              Sizes = (
+                383s
+                136s
+                383s
+                136s
+                383s
+                136s
+                383s
+                136s)
+              inherited tabParams: TTabItem
+                Size.Width = 59.000000000000000000
+                ExplicitSize.cx = 69.000000000000000000
+                ExplicitSize.cy = 26.000000000000000000
+              end
+              inherited tabAuthorization: TTabItem
+                Size.Width = 92.000000000000000000
+                ExplicitSize.cx = 69.000000000000000000
+                ExplicitSize.cy = 26.000000000000000000
+              end
+              inherited tabHeaders: TTabItem
+                Size.Width = 64.000000000000000000
+                ExplicitSize.cx = 69.000000000000000000
+                ExplicitSize.cy = 26.000000000000000000
+              end
+              inherited tabBody: TTabItem
+                Size.Width = 47.000000000000000000
+                ExplicitSize.cx = 69.000000000000000000
+                ExplicitSize.cy = 26.000000000000000000
+                inherited grdBody: TStringGrid
+                  Size.Width = 383.000000000000000000
+                  Viewport.Width = 383.000000000000000000
+                  Viewport.Height = 88.000000000000000000
+                end
+                inherited ToolBar1: TToolBar
+                  Size.Width = 383.000000000000000000
+                end
+              end
+            end
+          end
+          inherited pnlResponse: TPanel
+            Size.Width = 383.000000000000000000
+            Size.Height = 110.000000000000000000
+            inherited mmoReposnse: TMemo
+              Size.Width = 363.000000000000000000
+              Size.Height = 49.000000000000000000
+              Viewport.Width = 363.000000000000000000
+              Viewport.Height = 49.000000000000000000
+            end
+            inherited Panel1: TPanel
+              Size.Width = 383.000000000000000000
+              inherited Label2: TLabel
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+              inherited lblStatus: TLabel
+                Position.X = 118.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+            end
+          end
+          inherited Splitter2: TSplitter
+            Size.Width = 383.000000000000000000
+          end
+        end
+      end
+    end
+  end
+  inherited toolBar: TToolBar
+    Size.Width = 640.000000000000000000
+  end
+  inherited Splitter1: TSplitter
+    Size.Height = 432.000000000000000000
+  end
+end
